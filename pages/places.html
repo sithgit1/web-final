@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/style1.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>WEB PROGRAMMING: GROUP PROJECT BY FLASH CODERS</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<title>Place to visit in Nepal</title>
+<style>
+*{margin: 0; padding: 0;}
+body{ font-family: 'Oswald', sans-serif;
+font-size: 16px;
+color: #262626;}
+#wrapper{  margin: 0 auto;
+background: #ebebeb;
+display:grid;
+}
+h1{ font-weight: 700; color:#C70003;
+	 margin-bottom: 20px; text-align: center;
+	font-size: 40px; text-transform: uppercase; }
+.place{ margin-bottom: 50px;}
+.place .place-image{ margin:20px 0; text-align: center;
+padding-left: 100px;
+padding-right:100px;}
+
+.place .place-image .caption{ text-align: left; font-style: italic;}
+.place .place-image img{ width: 100%;}
+.place h2{ font-weight: 700;
+	color: #0087B8;
+	padding-left:50px;
+	padding-right:50px;
+	font-size: 30px;}
+.place p{
+	font-size: 16px;
+}
+@media (max-width: 300px) {
+	p { padding-left: 10px;
+	padding-right: 10px;
+	}
+	.place .place-image {
+	padding-left: 10px;
+	padding-right: 10px;}
+	.place h2{
+		font-size: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: 301px) {
+	p { padding-left: 20px;
+	padding-right: 20px;}
+	.place .place-image {
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+.place h2{
+	font-size: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+}
+@media (min-width: 700px) {
+	p { padding-left: 30px;
+	padding-right: 30px;}
+	.place .place-image {
+	padding-left: 50px;
+	padding-right: 50px;}
+	.place h2{
+		font-size: 25px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (min-width: 1000px) {
+	p { padding-left: 50px;
+	padding-right: 50px;}
+	.place .place-image {
+	padding-left: 100px;
+	padding-right: 100px;}
+	.place h2{
+		font-size: 30px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+</style>
+</head>
+
+<body>
+		<!--NAVBAR START-->
+		<div class="nav">
+			<nav class="navbar">
+			 <!-- LOGO -->
+			 <div class="logo"><img src="../images/logo.jpeg" height="80px"></div>
+			 <!-- NAVIGATION MENU -->
+			 <ul class="nav-links">
+			   <!-- USING HAMBURGER FOR NAVBAR RESIZING-->
+			   <input type="checkbox" id="checkbox_toggle" />
+			   <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+			   <!-- NAVIGATION MENUS -->
+			   <div class="menu">
+				 <li><a href="../index.html">HOME</a></li>
+				 <li><a href="places.html">DESTINATIONS</a></li>
+				 <li class="services">
+				   <a href="events.html">EVENTS</a>
+				   <!-- DROPDOWN MENU -->
+				 </li>
+				 <li><a href="things.html">ACTIVITIES</a></li>
+				 <li><a href="about.html">ABOUT</a></li>
+			   </div>
+			 </ul>
+			</nav>
+		</div>
+		<!--NAVBAR END-->
+
+		<!--Start of the code from Preti Shrestha for the page places.html-->
+		<div id="wrapper">
+			<div class="places-heading">
+	      <h2>Places To Visit</h2>
+	    </div>
+
+			<div class="place">
+			<h2>1. Pashupatinath Temple</h2>
+			<div class="place-image"><img src="../images/pashupati.jpg" alt=""/></div>
+				<p>Pashupatinath temple is one of the most sacred and ancient place to visit in Nepal. It is built in the 5th century. It is classified  in world heritage site of UNESCO. Pashupatinate temple is locate in capital city of Nepal “Kathmandu”. Thousands of people come to visit Pashupatinath temple. According to the Hindu religion, Pashupatinath is considered as the protector of the universe and the patron deity of Nepali people.</p>
+			</div>
+
+			<div class="place">
+			<h2>2. Chitwan National Park</h2>
+			<div class="place-image"><img src="../images/chitwan.jpg" alt=""/></div>
+				<p>Chitwan National Park, established in 1973, was Nepal’s first National Park. Located in the Southern Central Terai of Nepal. Most popular place to visit of varities animals and birds. We can find one horn rhino, charial crocodiles, royal Bengal Tigers, Deer, Monkeys, Wild Boar and up to 544 species of birds. Chitwan National Park  belongs to a World Heritage Site.</p>
+			</div>
+
+			<div class="place">
+			<h2>3. Mount Everest </h2>
+			<div class="place-image"><img src="../images/everest.jpg" alt=""/>
+				<div class="caption"><a href="https://earthscience.stackexchange.com/questions/9745/how-high-can-a-mountain-possibly-get" target="_blank">This Photo</a> by Unknown Author is licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA</a></div>
+			</div>
+				<p>The highest mountain on the earth.  It is located in the between of Nepal and Tibet. Mount Everest is known as a dream destination for trekeers and indeed a life changing experience. The height of the mountain is 8848.86 meter. We can find rare animal in himilayan region such as black bear, red panda, musk deer, wolves.</p>
+			</div>
+
+			<div class="place">
+			<h2>4. Maya Devi temple</h2>
+			<div class="place-image"><img src="../images/lumbini1.jpg" alt=""/></div>
+				<p>Maiya Devi Temple is the famous place to visit. It is main temple at Lumbine known as birth place of Lord Gautam Buddha. Lumbini is one of the holiest places of one of the world's great religions, and its remains contain important evidence about the nature of Buddhist pilgrimage centres from as early as the 3rd century B.C.</p>
+			</div>
+
+			<div class="place">
+			<h2>5. Kalinchowk</h2>
+			<div class="place-image"><img src="../images/kalinchowk.jpg" alt=""/></div>
+				<p>Kalinchowk is known as <strong>the snowy paradise of Nepal</strong> and is located 3842m above sea level in Dolakha district. Kalinchowk is a rural municipality, home to amazing scenery, cozy resorts on snowy hills, and the famous Kalinchowk Bhagwati Shrine. The distance between Kathmandu and Kalinchowk Bhagwati Shrine around 150 . In the winter season, especially in the months of December, January and February, the snowfall occurs. Many people visit there during the winter time to have some snow fun. The snowy visit and some friends along to play with, creates an amazing memory and quick relief from the monotony.</p>
+			</div>
+
+			<div class="place">
+			<h2>6. Bungee Jumping</h2>
+			<div class="place-image"><img src="../images/bungee1.jpg" alt=""/></div>
+				<p> In Nepal, you can bungee jump in two places: <strong>Bhote Koshi Gorge and Hemja, Pokhara</strong>. Bungee Jumping in Nepal is one of those activities that have gained wide popularity in the last few years at quite a fast rate. Many people either tourist or national people all of them participate in this activities and  it is not too coasty so every one can fulfill their dream. Bhoti Kosi River gorge on the Nepal/Tibet border is the longest free-fall in the world of 500ft (160m).</p>
+			</div>
+
+			<div class="place">
+			<h2>7. Fewa Lake</h2>
+			<div class="place-image"><img src="../images/fewa.jpg" alt=""/></div>
+				<p>Fewa Lake, is also known as Phewa Tal, located in the south of the Pokhara Valley that includes Pokhara city. Many tourist and local people come to visit fewa lake to worship goddess which is located in the middle of the lake called <strong>Tal Barahi</strong>. You can hire a boat, paddle at your own speed and having fun with family and friend. Pokhara is also the main tourist area. We can visit many places inside Pokhara. Like Davis Fall, Mahendra Cave, Bindhyabasini Temple etc.</p>
+			</div>
+
+			<div class="place">
+			<h2>8. Janaki Temple</h2>
+			<div class="place-image"><img src="../images/ram-janaki.jpg" alt=""/></div>
+				<p>Janaki Mandir is a Hindu temple in Janakpur, Nepal, dedicated to the Hindu goddess Sita. Every year, thousands of pilgrims from Nepal, India, Sri Lanka, and other countries visit Ram Janaki Temple to worship Lord Ram and Sita. Many worshippers visit the temple during the festivals of Ram Nawami, Vivaha Panchami, Dashain and Tihar.</p>
+			</div>
+    <!--FOOTER START-->
+
+	</div>
+	<div class="footer">
+		<footer style="width:100%">
+			<div class="footer-content">
+				<h3>FLASH CODERS</h3>
+				<p>Flash Coder is a Web Programming Course group which was formed to complete the group assignment by creating a website only using HTML and CSS.
+				Name "FLASH CODERS" will speak for itself or not that is to be decided yet.</p>
+				<ul class="socials">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom" style="width:100%">
+				<p>copyright &copy;2022 <a href="#">KCGI FLASH CODERS</a>  </p>
+					<div class="footer-menu">
+						<ul class="f-menu">
+							<li><a href="../index.html">HOME |</a></li>
+							<li><a href="about.html">ABOUT US</a></li>
+						</ul>
+					</div>
+			</div>
+		</footer>
+	</div>
+	<!--END OF THE FOOTER-->
+</body>
+</html>

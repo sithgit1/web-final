@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WEB PROGRAMMING: GROUP PROJECT BY FLASH CODERS</title>
+    <style media="screen">
+      input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      font-family: 'Oswald', sans-serif;
+      }
+
+      label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+      }
+
+      input[type=submit] {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+      font-family: 'Oswald', sans-serif;
+      }
+
+      input[type=submit]:hover {
+      background-color: white;
+      color: black;
+      }
+
+      .contact-form {
+      font-family: 'Oswald', sans-serif;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      }
+
+      .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+      }
+
+      .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+      }
+    </style>
+</head>
+<body>
+<!--WHOLE BODY WRAPPER-->
+	<div class="body-wrapper">
+		<!--NAVBAR START-->
+		<div class="nav">
+			<nav class="navbar">
+			 <!-- LOGO -->
+			 <div class="logo"><img src="../images/logo.jpeg" height="80px"></div>
+			 <!-- NAVIGATION MENU -->
+			 <ul class="nav-links">
+			   <!-- USING HAMBURGER FOR NAVBAR RESIZING-->
+			   <input type="checkbox" id="checkbox_toggle" />
+			   <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+			   <!-- NAVIGATION MENUS -->
+			   <div class="menu">
+				 <li><a href="../index.html">HOME</a></li>
+				 <li><a href="places.html">DESTINATIONS</a></li>
+				 <li class="services">
+				   <a href="events.html">EVENTS</a>
+				   <!-- DROPDOWN MENU -->
+				 </li>
+				 <li><a href="things.html">ACTIVITIES</a></li>
+				 <li><a href="#">ABOUT</a></li>
+			   </div>
+			 </ul>
+			</nav>
+		</div>
+		<!--NAVBAR END-->
+    <div class="places-heading">
+      <h2>Our Team</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="../images/bibek.jpg" alt="">
+        <p> <span>  Bibek Thapa Magar</span><br> <q cite="">
+         Hello I am Bibek. Its been quite an experience working as a team to do this group project. Its also been a great challenge to take part in. We have tried our best to develop a responsive css
+       grid layout website for this project.</q> </p>
+      </div>
+      <div class="card">
+        <img src="../images/pretii.jpg" alt="">
+        <p> <span>  SHRESTHA PREETI</span> <br> <q cite="">
+
+         Hey Iam Preeti. I am very greatfull to be the part of this group. Thank you for all team member for supporting and helping to achieve our goal.</q> </p>
+      </div>
+      <div class="card">
+        <img src="../images/sithara.jpg" alt="">
+        <p> <span>  Shithara Weheragoda</span><br> <q cite="">
+          Hi, I am Sithara Weheragoda. Group working was interesting with having a great experience. everything went smoothly till the successful outcome.
+          All members did their tasks without any trouble to others as discussed at the planning level.  Also, everyone supported each other when someone needed a hand.
+         </q>
+
+       </p>
+      </div>
+      <div class="card">
+        <img src="../images/leader.jpg" alt="">
+        <p> <span>  Chanuri Madushani Anandasiri</span><br> <q cite="">
+
+         Hi, I am Chanuri, It's a really good chance to work in a group to make our final project. As a group we shared our knowledge with each other and respected the ideas given by other group members. Finally we had a better output, a website that provides many details about the lovely country Nepal.</q> </p>
+      </div>
+    </div>
+    <div class="places-heading">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact-form">
+      <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="nepal">Nepal</option>
+            <option value="sri lanka">Sri Lanka</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="japan">Japan</option>
+            <option value="south korea">South Korea</option>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="SUBMIT">
+      </div>
+    </form>
+  </div>
+    <!--FOOTER START-->
+		<div class="footer">
+			<footer>
+				<div class="footer-content">
+					<h3>FLASH CODERS</h3>
+					<p>Flash Coder is a Web Programming Course group which was formed to complete the group assignment by creating a website only using HTML and CSS.
+					Name "FLASH CODERS" will speak for itself or not that is to be decided yet.</p>
+					<ul class="socials">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<p>copyright &copy;2022 <a href="#">KCGI FLASH CODERS</a>  </p>
+						<div class="footer-menu">
+							<ul class="f-menu">
+								<li><a href="">HOME |</a></li>
+								<li><a href="">ABOUT US</a></li>
+							</ul>
+						</div>
+				</div>
+			</footer>
+		</div>
+		<!--END OF THE FOOTER-->
+	</div>
+<!--END OF WHOLE BODY WRAPPER-->
+
+</body>
+</html>
